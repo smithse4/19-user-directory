@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Ron Swanson",
+    "spouse": "Diane Lewis",
+    "occupation": "National Park Superintendent",
+    "location": "Pawnee"
+  },
+  {
+    "id": 2,
+    "name": "Leslie Knope",
+    "spouse": "Ben Wyatt",
+    "occupation": "Governor of Indiana",
+    "location": "Indianapolis/Pawnee"
+  },
+  {
+    "id": 3,
+    "name": "April Ludgate",
+    "spouse": "Andy Dwyer",
+    "occupation": "Animal Control Deputy Director",
+    "location": "Washington D.C."
+  },
+  {
+    "id": 4,
+    "name": "Ben Wyatt",
+    "spouse": "Leslie Knope",
+    "occupation": "Auditor/Board Game Designer",
+    "location": "Indianapolis/Pawnee"
+  },
+  {
+    "id": 5,
+    "name": "Andy Dwyer",
+    "spouse": "April Ludgate",
+    "occupation": "Musician/Shoe Shiner",
+    "location": "Washington D.C."
+  },
+  {
+    "id": 6,
+    "name": "Ann Perkins",
+    "spouse": "Chris Traeger",
+    "occupation": "Nurse",
+    "location": "Ann Arbor"
+  },
+  {
+    "id": 7,
+    "name": "Tom Haverford",
+    "spouse": "Lucy",
+    "occupation": "Entrepreneur",
+    "location": "Pawnee"
+  },
+  {
+    "id": 8,
+    "name": "Mark Brendanawicz",
+    "spouse": "NA",
+    "occupation": "City Planner",
+    "location": "Pawnee"
+  },
+  {
+    "id": 9,
+    "name": "Jerry Gergich",
+    "spouse": "Gayle Gergich",
+    "occupation": "Mayor of Pawnee",
+    "location": "Pawnee"
+  },
+  {
+    "id": 10,
+    "name": "Chris Traeger",
+    "spouse": "Ann Perkins",
+    "occupation": "City Manager",
+    "location": "Ann Arbor"
+  },
+  {
+    "id": 11,
+    "name": "Donna Meagle",
+    "spouse": "Joe",
+    "occupation": "Realtor",
+    "location": "Seattle"
+  },
+  {
+    "id": 12,
+    "name": "Tammy Swanson",
+    "spouse": "Ron Swanson, divorced",
+    "occupation": "Librarian",
+    "location": "Pawnee"
+  }
+]
