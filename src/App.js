@@ -3,11 +3,18 @@ import Directory from "./components/Directory";
 import Jumbotron from "./components/Jumbotron";
 import Table from "./components/Table";
 import employees from "./employees.json";
+import "./App.css";
 
 class App extends Component {
   state = {
     employees,
   };
+
+  // const styles = {
+  //   employeeTable: {
+  //     maxWidth: "95%",
+  //   },
+  // };
 
   sorter = (category) => {
     // sort employees.location alphabetically
@@ -25,14 +32,22 @@ class App extends Component {
       <>
         <Jumbotron />
         <Directory />
-        <table>
+        <table className="table employeeTable">
           <tr>
-            <th onClick={() => this.sorter('id')}><a href="#">Id</a></th>
-            <th onClick={() => this.sorter('name')}><a href="#">Name</a></th>
-            <th onClick={() => this.sorter('occupation')}><a href="#">Occupation</a></th>
-            <th onClick={() => this.sorter('spouse')}><a href="#">Spouse</a></th>
-            <th onClick={() => this.sorter('location')}>
-              <a href="#">Location</a>
+            <th onClick={() => this.sorter("id")} className="tableHead">
+              <button className="tableButton">Id</button>
+            </th>
+            <th onClick={() => this.sorter("name")} className="tableHead">
+              <button className="tableButton">Name</button>
+            </th>
+            <th onClick={() => this.sorter("occupation")} className="tableHead">
+              <button className="tableButton">Occupation</button>
+            </th>
+            <th onClick={() => this.sorter("spouse")} className="tableHead">
+              <button className="tableButton">Spouse</button>
+            </th>
+            <th onClick={() => this.sorter("location")} className="tableHead">
+              <button className="tableButton">Location</button>
             </th>
           </tr>
           {this.state.employees.map((employee) => (
