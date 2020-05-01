@@ -3,6 +3,7 @@ import Directory from "./components/Directory";
 import Jumbotron from "./components/Jumbotron";
 import Table from "./components/Table";
 import employees from "./employees.json";
+import Search from "./components/Search"
 import "./App.css";
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
     return (
       <>
         <Jumbotron />
+        <Search/>
         <Directory />
         <table className="table employeeTable">
           <tr>
