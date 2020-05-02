@@ -1,24 +1,39 @@
 import React, { Component } from "react";
-import Directory from "./components/Directory";
 import Jumbotron from "./components/Jumbotron";
 import Table from "./components/Table";
 import employees from "./employees.json";
-import Search from "./components/Search"
 import "./App.css";
 
 class App extends Component {
+
   state = {
     employees,
+    employeesToDisplay: [],
+    searchTerm: "",
   };
 
-  // const styles = {
-  //   employeeTable: {
-  //     maxWidth: "95%",
-  //   },
-  // };
+  // Reach searchTerm input
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value,
+    });
+  };
 
+  // Filter employee names through searchTerm
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("HandleSubmit");
+    console.log(this.state.searchTerm);
+    const employees = this.state.employees.filter((employee) => {
+        return employee.name.includes(this.state.searchTerm);
+    });
+    this.setState({
+      employees
+    });
+  };
+    // Sort columns
   sorter = (category) => {
-    // sort employees.location alphabetically
     const employees = this.state.employees.sort(function (a, b) {
       var textA = a[category];
       var textB = b[category];
@@ -32,8 +47,31 @@ class App extends Component {
     return (
       <>
         <Jumbotron />
-        <Search/>
-        <Directory />
+        <div className="container">
+          <div className="row row justify-content-end">
+            <form onSubmit={this.handleSubmit}>
+              <div className="input-group mb-3 searchBar">
+                <input
+                  type="text"
+                  name="searchTerm"
+                  value={this.state.searchTerm}
+                  onChange={this.handleChange}
+                  className="form-control"
+                  placeholder="Search"
+                />
+                <div className="input-group-append">
+                  <button
+                    className="btn btn-outline-secondary searchBtn"
+                    type="submit"
+                    id="button-addon2 "
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
         <table className="table employeeTable">
           <tr>
             <th onClick={() => this.sorter("id")} className="tableHead">
