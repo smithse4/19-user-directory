@@ -8,3 +8,9 @@
 .tableHead {
     background-color: #7EC1D0;
 }
+
+.searchBtn {
+    background-color: #FD9D08;
+    color: white;
+    border: none;
+}

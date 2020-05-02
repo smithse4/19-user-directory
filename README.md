@@ -22,6 +22,12 @@ The user should be able to:
 
   * Filter the users by at least one property.
 
+Images below show employee directory and searched directory.
+
+![Employee Directory](./public/img/employee-directory.png)
+
+![Employee Directory](./public/img/sorted.png)
+
 ## Link
 
 * [Github repository](https://github.com/smithse4/19-user-directory)
