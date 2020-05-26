@@ -26,6 +26,14 @@ The user should be able to:
 
   * USe the search bar to filter the users by name.
 
+## Installing
+
+To run the app locally, you will first need to git clone the repository to your local machine.
+
+* Cd into repository
+* Install dependencies by running 'yarn install'
+* Start app by running 'yarn start'
+
 ## Screenshots
 
 Images below show employee directory and searched directory.
