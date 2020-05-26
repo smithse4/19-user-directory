@@ -4,6 +4,12 @@
 
 This app is an employee directory created with with React. My application's UI is broken into components, manages component state, and responds to user events.
 
+## Links
+
+* [Github repository](https://github.com/smithse4/19-user-directory)
+
+* [Deployed Site](https://stephdirectory.herokuapp.com/)
+
 ## User Story
 
 * As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
@@ -28,7 +34,7 @@ Images below show employee directory and searched directory.
 
 ![Employee Directory](./public/img/sorted.png)
 
-## Link
 
-* [Github repository](https://github.com/smithse4/19-user-directory)
+
+
 
